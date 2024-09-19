@@ -1,0 +1,32 @@
+key: value
+
+person:
+  name: John
+  age: 30
+  city: NY
+
+string_multilinea: >
+  hola
+  mundo
+
+string_multilinea: |
+  hola
+  mundo
+
+listas:
+  - item1
+  - item2
+  - item3
+
+listas:
+  - item1 - item2 - item3
+
+listas2:
+  - item1: valor
+  - item2: valor
+
+valor_null:
+  db:
+  
+es_igual_que:
+  db: null
