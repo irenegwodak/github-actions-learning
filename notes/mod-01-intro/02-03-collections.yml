@@ -1,0 +1,59 @@
+# Secuencias (equivalentes a listas o arreglos):
+- Amarillo
+- Verde
+- Azul
+
+# Se puede usar una secuencia como valor para una llave.
+secuencia:
+  - Elemento 2
+  - Elemento 3
+  - Elemento 4
+  - Elemento 1
+
+# Las secuencias pueden contener secuencias como elementos.
+- [Uno, Dos, Tres]
+- [Domingo, Lunes, Martes]
+- [Luna, Marte, Tierra]
+
+# Las secuencias pueden tener distintos tipos en su contenido.
+secuencia_combinada:
+    - texto
+    - 5
+    - 0.6
+    - llave: valor # se convierte en un json dentro de la secuencia
+    -
+        - Esta es una secuencia
+        - ...dentro de otra secuencia
+
+
+#### JSON ####
+
+# JSON está incluído dentro de YAML, se pueden escribir mapas con la sintaxis de JSON:
+mapa_de_json_1: {"llave": "valor"}
+mapa_de_json_2:
+  llave: valor
+
+# Las secuencias tambien se pueden escribir como un arreglo al estilo JSON
+secuencia_de_json_1: [3, 2, 1, "despegue"]
+secuencia_de_json_2:
+  - 3
+  - 2
+  - 1
+  - "despegue"
+
+###############
+
+# YAML también soporta conjuntos usando el simbolo ?
+# y se ven de la siguiente forma:
+set:
+    ? item1
+    ? item2
+    ? item3
+
+# Se puede usar el tag !!set
+# Al igual que Python, los conjuntos sólo son mapas con valores nulos.
+# El ejemplo de arriba es equivalente a:
+set2:
+    item1: null
+    item2: null
+    item3: null

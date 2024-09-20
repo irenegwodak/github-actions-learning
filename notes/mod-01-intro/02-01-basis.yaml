@@ -1,0 +1,22 @@
+# Esto es un comentario
+clave: valor
+otra_clave: otro valor
+
+clave sin comillas: valor sin comillas
+"Clave entre comillas": "valor entre comillas"
+
+string: sin comillas
+clave: "string entre comillas."
+
+valor_numerico: 100
+0.25: llave numérica
+booleano: true
+valor_nulo: null
+clave con espacios: valor
+
+# Las llaves también pueden ser objetos de multiples líneas,
+# usando ? para indicar el inicio de una llave
+? |
+    Esto es una llave
+    que tiene múltiples líneas
+: y este es su valor

@@ -1,0 +1,8 @@
+# YAML usa tres guiones (---) para diferenciar entre directivas y contenido del documento.
+# Por otra parte, tres puntos (...) se utilizan para indicar el final del documento en casos especiales.
+
+# YAML tiene funciones útiles llamadas 'anchors' (anclas), que te permiten duplicar fácilmente contenido a lo largo de tu documento.
+# & indica la declaración del ancla,
+declara_ancla: &texto texto de la clave
+# * indica el uso de dicha ancla.
+usa_ancla: *texto # tendrá el valor "texto de la clave"

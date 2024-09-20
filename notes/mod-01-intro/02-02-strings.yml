@@ -1,0 +1,19 @@
+# Los strings de líneas múltiples pueden ser escritos como un 'bloque literal' (usando pipes |) o como un 'bloque doblado' (usando >)
+
+bloque_literal: |
+    Este bloque completo de texto será preservado como el valor de la llave
+    'bloque_literal', incluyendo los saltos de línea.
+
+    Se continúa guardando la literal hasta que se cese la indentación.
+        Cualquier línea que tenga más indentación, mantendrá los espacios dados
+        (por ejemplo, estas líneas se guardarán con cuatro espacios)
+
+bloque_doblado: >
+    De la misma forma que el valor de 'bloque_literal', todas estas
+    líneas se guardarán como una sola literal, pero en esta ocasión todos los
+    saltos de línea serán reemplazados por espacio.
+
+    Las líneas en blanco, como la anterior, son convertidas a un salto de línea.
+
+        Las líneas con mayor indentación guardan sus saltos de línea.
+        Esta literal ocuparán dos líneas.

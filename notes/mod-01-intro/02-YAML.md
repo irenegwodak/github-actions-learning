@@ -5,7 +5,7 @@ Lenguaje de serialización de datos (en Ansible, Docker, Kubernetes entre otros.
 Para definir archivo de config fácil de leer
 Minimalista y fácil de interpretar, no necesita comillas, llaves, etc
 
-Basado en [Indentación]
+Basado en [Indentación] para anidar elementos
 
 Extensión .yaml o .yml, indiferente.
 
