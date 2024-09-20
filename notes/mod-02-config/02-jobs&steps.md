@@ -1,5 +1,5 @@
-En cada job es necesario definir en qué SO se ejecuta (runs-on)
-
+Dentro de jobs puede haber varios job.
+Dentro de cada job puede haber varios steps.
 <!-- 
 name: Nombre del Workflow
 
@@ -22,6 +22,7 @@ jobs:
     - name: Nombre del step
       run: acción a ejecutar
 -->
+> En cada job es necesario definir en qué SO se ejecuta (runs-on)
 
 Los Jobs se ejecutan de forma independiente y paralela.
 
