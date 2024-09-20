@@ -1,14 +1,22 @@
-### Curso de Github Actions
+### Aprendiendo Github Actions
 
-En este repo encontrarás los apuntes y recursos que **he ido generando** en la realización de este curso.
+En este repo encontrarás los apuntes y recursos propios generados mientras aprendía Github Actions.
 
+##
+
+Fuentes:
+
+[YAML.org](https://yaml.org/)
+
+[Learn X in Y minutes](https://learnxinyminutes.com/docs/es-es/yaml-es/)
+
+[Codigo Facilito](https://codigofacilito.com/cursos/github-actions)
 
 ## Descripción
 GitHub Actions es una de las herramientas más útiles del desarrollo moderno porque te permite automatizar flujos de trabajo como el despliegue de tu código a producción. En este curso aprenderás los fundamentos de GitHub Actions, la sintaxis con YAML, y la definición de flujos de trabajo, incluída su integración con la nube de Azure
 
-https://codigofacilito.com/cursos/github-actions
 
-## Temario
+## Temario de Código Facilito
 
 ### Módulo 1 - Introducción a GitHub Actions
 
