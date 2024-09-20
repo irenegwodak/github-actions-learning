@@ -1,8 +1,25 @@
 name: Nombre del workflow
 on: [push]
 jobs: 
-  nombre-del-job:
+  primer-job:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Nombre del step
-      run: echo "Primer Job"
+    - name: Primer step del primer job (echo)
+      run: echo "Echo primer Job"
+  
+  segundo-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Primer step del segundo job (LS)
+      run: ls -al
+
+    - name: Segundo step del segundo job (touch file)
+      run: touch test.txt
+
+    - name: Set text
+      run: echo "Hola mundo" >> test.txt
+
+    - name: Read file
+      run: cat test.txt
