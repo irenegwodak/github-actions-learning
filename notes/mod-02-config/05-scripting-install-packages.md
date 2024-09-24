@@ -5,3 +5,9 @@ run: |
     echo "Hola mundo" >> hola.xt
     cat hola.txt
  -->
+
+ <!-- Example 
+ apt get install
+  -->
+
+Dentro de la carpeta "workflows" podemos tener scripts de shell que nos ayuden a gestionar las tareas.
