@@ -1,0 +1,13 @@
+name: Main
+
+on: push
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ls
+        run: |
+          echo "Hola mundo" >> hola.xt
+          cat hola.txt
