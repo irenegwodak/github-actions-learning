@@ -1,2 +1,5 @@
-echo "Hola script" >> script.txt
-cat script.txt
+ls -la
+sudo apt update
+sudo apt install curl
+cat curl installed
+ls -la
