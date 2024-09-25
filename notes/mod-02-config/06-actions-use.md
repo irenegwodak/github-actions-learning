@@ -1,5 +1,6 @@
-<!--
+Se suele usar este código para instalar Node
 
+<!--
 - name: Setup Node.js environment
 uses: actions/setup-node@v4.0.4
 
