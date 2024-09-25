@@ -8,11 +8,11 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4.1.7            
 
       - name: ls
         run: ls
       - name: hello world - local action
-        uses: ./.github/actions/local
+        uses: ./.github/actions/hello-world
       - name: hola mundo - local action
-        uses: ./.github/actions/local/hola-mundo.yml
+        uses: ./.github/actions/hola-mundo

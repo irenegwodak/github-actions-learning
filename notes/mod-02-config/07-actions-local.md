@@ -1,18 +1,14 @@
 **Crear local Actions.**
 
-Crear
-    /.github/actions
+Crear: /.github/actions/una-carpeta-por-action/action.yml
 
-Se pueden crear subcarpetas
-    /.github/actions/local
-  
-Y dentro crear [action.yml] por convención. Al importar no hará falta indicar el nombre porque por defecto buscará este.
+Al importar se especifica la ruta y YAML buscará [action.yml].
+No es posible crear un [nombre-personalizado.yml] dentro de un directorio porque da error:
+    <!-- Error: Can't find 'action.yml', 'action.yaml' or 'Dockerfile' under '/home/runner/work/github-actions-learning/github-actions-learning/.github/actions/local/hola-mundo.yml'. Did you forget to run actions/checkout before running your local action? -->
 
-**código del YAML**
-
-Se pueden poner **nombre** y **descripción**.
+**código yaml del local action**
 En [runs] hace falta indicar [using: 'composite']
-Poner [steps]
+En [steps] hace falta indicar [shell: bash]
 
 <!-- 
 name: 'My action'
@@ -22,17 +18,14 @@ runs:
   using: 'composite'
 
   steps:
-    - name: 'Hello world'
-      run: echo "Hello world"
+    - name: 'Hola mundo'
+      run: echo "Hola mundo"
+      shell: bash
  -->
 
-Dentro de los steps hace falta especificar el shell:
-<!-- shell: bash -->
-
-
-Para importar en el workflow:
+Para **importar** en el workflow indicar la ruta:
 <!-- 
 steps:
     name: ...
-    uses: ./.github/actions/local-actions/
+    uses: ./.github/actions/subcarpeta/
 -->
