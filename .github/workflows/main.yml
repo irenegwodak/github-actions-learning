@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.7
-      - name: hello world - local action
-        run: ./.github/actions/local/hello-world.yml
+      # - name: hello world - local action
+      #   run: ./.github/actions/local/hello-world.yml
       - name: hola mundo test - local action
-        run: ./.github/actions/local/
+        run: ./.github/actions/local
