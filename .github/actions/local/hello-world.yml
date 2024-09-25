@@ -1,0 +1,10 @@
+name: 'My action'
+description: 'Test action'
+
+runs:
+  using: 'composite'
+
+  steps:
+    - name: 'Hello world'
+      run: echo "Hello world"
+      shell: bash

@@ -1,41 +1,15 @@
-name: Main
+name: Test Composite Action
 
 on: push
 
 jobs:
-  test-hola-mundo:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: yml script
-        run: |
-          echo "Hola mundo" >> hola.txt
-          cat hola.txt
-
-  test-actions-marketplace:
+  local-action:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.7
-
-      # - name: shell install script
-      #   run: |
-      #     chmod +x script.sh
-      #     ./script.sh
-
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4.0.4
-        with:
-          node-version: 'latest'
-
-      - name: node version
-        run: node --version
-
-      - name: install PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.3'
-
-      - name: php version
-        run: php --version
+      - name: hello world - local action
+        run: ./.github/actions/local/hello-world.yml
+      - name: hola mundo test - local action
+        run: ./.github/actions/local/
