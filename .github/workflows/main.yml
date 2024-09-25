@@ -14,3 +14,5 @@ jobs:
         run: ls
       - name: hello world - local action
         uses: ./.github/actions/local
+      - name: hola mundo - local action
+        uses: ./.github/actions/local/hola-mundo.yml
