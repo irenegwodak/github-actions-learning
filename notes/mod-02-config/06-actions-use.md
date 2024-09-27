@@ -1,4 +1,4 @@
-Se suele usar este código para instalar Node
+Ejemplo de código para instalar Node
 
 <!--
 - name: Setup Node.js environment

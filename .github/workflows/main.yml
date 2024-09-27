@@ -10,9 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.7            
 
-      - name: ls
-        run: ls
-      - name: hello world - local action
-        uses: ./.github/actions/hello-world
-      - name: hola mundo - local action
-        uses: ./.github/actions/hola-mundo
+      - name: echo default message - composite
+        uses: ./.github/actions/02-echo-message
+      
+      - name: echo personal message - composite
+        uses: ./.github/actions/02-echo-message
+        with:
+          message: 'Patricia'
+
