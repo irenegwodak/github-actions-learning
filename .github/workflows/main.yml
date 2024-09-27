@@ -3,18 +3,18 @@ name: Test Composite Action
 on: push
 
 jobs:
-  local-action:
+  say-hello:
     runs-on: ubuntu-latest
 
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: password
+        ports:
+          - 3306:3306
+
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4.1.7            
-
-      - name: echo default message - composite
-        uses: ./.github/actions/02-echo-message
-      
-      - name: echo personal message - composite
-        uses: ./.github/actions/02-echo-message
-        with:
-          message: 'Patricia'
-
+      - name: Test
+        run: ls
