@@ -1,0 +1,13 @@
+name: Test Environment Variables
+on: push
+
+jobs:
+  echo-env:
+    runs-on: ubuntu-latest
+
+    env:
+      MY_VAR: valor
+
+    steps:
+      - name: Echo
+        run: echo 'Valor= $MY_VAR'
