@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: Echo
-        run: echo 'Valor= $MY_VAR'
+        run: echo "Valor= $MY_VAR"
