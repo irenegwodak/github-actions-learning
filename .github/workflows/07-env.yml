@@ -6,8 +6,13 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      MY_VAR: valor
+      MY_VAR: a nivel Job
 
     steps:
-      - name: Echo
+      - name: Echo Step env
+        env:
+          MY_VAR: a nivel Step
+        run: echo "Valor= $MY_VAR"
+      
+      - name: Echo Job env
         run: echo "Valor= $MY_VAR"
