@@ -17,7 +17,11 @@ Primeros pasos:
         - Indicamos nombre del step [-name:]
         - Indicamos qué se ejectua [run:]
 
-En cada job es necesario definir en qué SO se ejecuta (runs-on)
+En cada job es necesario definir en qué SO se ejecuta 
+
+<!--     
+runs-on:
+-->
 
 <!-- 
 name: Nombre del Workflow

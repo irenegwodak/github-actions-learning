@@ -1,5 +1,6 @@
-Dentro de jobs puede haber varios job.
-Dentro de cada job puede haber varios steps.
+Dentro de Jobs puede haber varios trabajos.
+Dentro de cada trabajo puede haber varios steps.
+
 <!-- 
 name: Nombre del Workflow
 
@@ -22,11 +23,19 @@ jobs:
     - name: Nombre del step
       run: acción a ejecutar
 -->
-> En cada job es necesario definir en qué SO se ejecuta (runs-on)
+
+> En cada job es necesario definir en qué SO se ejecuta 
+<!-- 
+runs-on:
+ -->
 
 Los Jobs se ejecutan de forma independiente y paralela.
 
-Si queremos que un job se ejecute cuando termine otro job, añadimos la directiva "needs:"
+Si queremos que un job se ejecute cuando termine otro job, añadimos la directiva 
+<!-- 
+needs:
+ -->
+ 
 <!-- 
 jobs: 
   primer-job:

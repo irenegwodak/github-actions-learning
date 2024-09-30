@@ -11,8 +11,7 @@ run: node --version
   run: npm install
 -->
 
-Podemos usar el "with" después del "uses"
-Permite enviar parámetros al action
+Para enviar parámetros al action utilizamos "with:" después de "uses:"
 
 <!-- 
       - name: Setup Node.js environment
