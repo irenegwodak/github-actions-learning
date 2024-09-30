@@ -16,3 +16,6 @@ jobs:
       
       - name: Echo Job env
         run: echo "Valor= $MY_VAR"
+      
+      - name: Echo Github env
+        run: echo "Valor= ${{ vars.MY_REPOSITORY_VARIABLE }}"

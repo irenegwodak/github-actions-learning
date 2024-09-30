@@ -18,4 +18,15 @@ jobs:
             MY_VAR: a nivel step
  -->
 
- Las variables se inyectan directamente en el servidor, podemos acceder a ellas solo con el nombre.
+Se prioriza la variable del step a la del job (global).
+
+Las variables se inyectan directamente en el servidor, podemos acceder a ellas solo con el nombre.
+
+------
+[https://docs.github.com/es/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#vars-context]
+Se pueden crear variables de entorno alojadas en el repositorio desde la web de Github:
+Settings/Security - Secrets and variables/Actions/Variables/New repository variables
+Se utilizar el objeto vars
+<!-- 
+${{ vars.MY_REPOSITORY_VARIABLE }}"
+-->
