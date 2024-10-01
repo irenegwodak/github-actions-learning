@@ -14,7 +14,7 @@ jobs:
   job-complex:
     runs-on: ubuntu-latest
 
-    needs: [primer-job]
+    needs: [job-basic]
 
     env:
       MY_VAR: valor

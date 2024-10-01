@@ -13,6 +13,6 @@ jobs:
       - name: ls
         run: ls
       - name: hello world - local action
-        uses: ./.github/actions/01-hello-world
+        uses: ./.github/actions/2-7-hello-world
       - name: hola mundo - local action
-        uses: ./.github/actions/01-hola-mundo
+        uses: ./.github/actions/2-7-hola-mundo
