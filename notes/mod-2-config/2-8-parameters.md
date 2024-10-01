@@ -41,8 +41,10 @@ runs:
 
 
 ## 
+Checkout: Utiliza la acción oficial de GitHub para hacer un checkout del código del repositorio (bajar el código fuente a la máquina de CI/CD).
 
 Si miramos la documentación del Action [Checkout](https://docs.github.com/es/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#inputs-context)
+
 
 <!-- 
 - uses: actions/checkout@v4
