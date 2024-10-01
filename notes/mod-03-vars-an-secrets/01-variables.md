@@ -26,7 +26,7 @@ Las variables se inyectan directamente en el servidor, podemos acceder a ellas s
 [https://docs.github.com/es/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#vars-context]
 Se pueden crear variables de entorno alojadas en el repositorio desde la web de Github:
 Settings/Security - Secrets and variables/Actions/Variables/New repository variables
-Se utilizar el objeto vars
+Se utiliza la interpolación con el objeto [vars]
 <!-- 
 ${{ vars.MY_REPOSITORY_VARIABLE }}"
 -->
