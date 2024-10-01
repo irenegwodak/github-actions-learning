@@ -30,3 +30,5 @@ Se utiliza la interpolación con el objeto [vars]
 <!-- 
 ${{ vars.MY_REPOSITORY_VARIABLE }}"
 -->
+
+Al ser secreto, github no lo printea.
