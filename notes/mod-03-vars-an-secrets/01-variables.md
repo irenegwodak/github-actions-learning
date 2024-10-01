@@ -32,3 +32,8 @@ ${{ vars.MY_REPOSITORY_VARIABLE }}"
 -->
 
 Al ser secreto, github no lo imprime directamente si no censurado con ***.
+
+<!-- 
+  - name: Echo Github env
+    run: echo "Valor= ${{ vars.MY_REPOSITORY_VARIABLE }}"
+-->

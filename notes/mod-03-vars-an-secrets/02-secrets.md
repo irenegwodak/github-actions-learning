@@ -11,3 +11,8 @@ También se utiliza la interpolación con el objeto [secrets]
 <!-- 
 ${{ secrets.MY_REPOSITORY_SECRET }}"
 -->
+
+<!-- 
+  - name: Echo Github secret
+    run: echo "Valor= ${{ secrets.MY_SECRET }}"
+-->
