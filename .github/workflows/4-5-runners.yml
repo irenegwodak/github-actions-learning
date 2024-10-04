@@ -3,7 +3,7 @@ on: [push]
       
 jobs:
   laravel-test:
-    runs-on: ubuntu-latest    
+    runs-on: macOS 14
 
     steps:
       - name: Ls
