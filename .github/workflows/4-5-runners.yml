@@ -1,0 +1,14 @@
+name: Runners test ubuntu
+on: [push]
+      
+jobs:
+  laravel-test:
+    runs-on: ubuntu-latest    
+
+    steps:
+      - name: Ls
+        run: ls -la
+
+
+
+
