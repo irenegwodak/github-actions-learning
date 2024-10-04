@@ -1,0 +1,6 @@
+name: Runners test
+on: [push]
+
+jobs:
+  ubuntu-test:
+    runs-on: [self-hosted, Linux, x64]
