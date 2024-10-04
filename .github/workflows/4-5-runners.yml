@@ -2,7 +2,7 @@ name: Runners test mac-os
 on: [push]
       
 jobs:
-  runner-test:
+  macos-test:
     runs-on: macOS 14
 
     steps:
