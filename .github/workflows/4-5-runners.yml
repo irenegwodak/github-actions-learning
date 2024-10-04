@@ -2,8 +2,8 @@ name: Runners test mac-os
 on: [push]
       
 jobs:
-  runner-test:
-    runs-on: macOS 14
+  macos-test:
+    runs-on: macos-latest
 
     steps:
       - name: Ls
