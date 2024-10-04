@@ -1,9 +1,9 @@
-name: Runners test ubuntu
+name: Runners test mac-os
 on: [push]
       
 jobs:
-  laravel-test:
-    runs-on: ubuntu-latest    
+  runner-test:
+    runs-on: macOS 14
 
     steps:
       - name: Ls
