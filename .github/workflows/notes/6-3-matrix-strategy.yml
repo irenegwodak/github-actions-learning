@@ -1,0 +1,24 @@
+name: matrix strategy
+on: [push]
+
+jobs:
+  matrix-strategy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php-version: [ '7.4', '8.0', '8.1' ]    
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3.0.2
+
+      - name: set up php
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+
+      - name: print php version
+        run: |
+          echo "PHP version ${{ matrix.php-version }} "
+          php --version
