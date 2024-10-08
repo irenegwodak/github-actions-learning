@@ -1,0 +1,27 @@
+name: ssh authentication example
+on: [push]
+
+jobs:
+  ssh-authenticate:
+    runs-on: [ubuntu-latest]
+
+    steps:
+      - name: setup
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
+
+      - name: remote ssh commands with pass
+        uses: appleboy/ssh-action@master
+        if: success()
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            whoami
+            cd /home/folder/actions
+            git pull origin main
